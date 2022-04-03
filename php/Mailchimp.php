@@ -20,7 +20,7 @@ class Mailchimp {
     
     public $apikey;
     public $ch;
-    public $root  = 'https://us14.api.mailchimp.com/2.0';
+    public $root  = 'https://api.mailchimp.com/2.0';
     public $debug = true;
 
     public static $error_map = array(
@@ -133,12 +133,12 @@ class Mailchimp {
         }
 
         $this->apikey = $apikey;
-        $dc           = "us1";
+        $dc           = "us14";
 
         if (strstr($this->apikey, "-")){
             list($key, $dc) = explode("-", $this->apikey, 2);
             if (!$dc) {
-                $dc = "us1";
+                $dc = "us14";
             }
         }
 
