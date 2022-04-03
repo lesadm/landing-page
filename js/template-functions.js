@@ -126,12 +126,12 @@ $( document ).ready( function(){
 	// references and messages
 	var contactForm = '.contact-form';
 	var contactRequired = '.required-field';
-	var contactFormSending = 'Please wait.';
-	var contactFormSendingButton = 'Sending...';
-	var contactFormSuccess = 'Thank you, your email has been received!';
-	var contactFormError = 'Oh boy an error occurred, please try again.';
-	var contactFormFillFields = 'Please fill out required fields.';
-	var contactFormValidEmail = 'Please enter a valid email address.';
+	var contactFormSending = 'Будь ласка зачекайте.';
+	var contactFormSendingButton = 'Надсилання...';
+	var contactFormSuccess = 'Ваш лист надіслано!';
+	var contactFormError = 'Помилка.';
+	var contactFormFillFields = 'Заповніть всі поля будь ласка.';
+	var contactFormValidEmail = 'Вкажіть валідний email.';
 
 	// Google Map
 	var mapContainer = '.map-container';
