@@ -967,10 +967,11 @@ body.boxed .header .header-inner{
 
 /* Logo Mobile */
 .mobile .header .logo{
+
 	height: 100%;
 	padding: 0 !important;
 	margin: 0 !important;
-	display: table;
+	display: none;
 	float: left;
 }
 .mobile .header .logo-inner {

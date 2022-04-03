@@ -47,13 +47,16 @@
 				<nav class="side-navigation left">
 					<ul>
 						<li class="current">
-							<a href="#home" data-offset="-60" class="scroll-link">Головна</a>
+							<a href="#home" data-offset="-100" class="scroll-link">Головна</a>
 						</li>
 						<li>
-							<a href="#services" data-offset="-60" class="scroll-link">Сервіси</a>
+							<a href="#services" data-offset="-100" class="scroll-link">Про нас</a>
 						</li>
 						<li>
-							<a href="#about" data-offset="-60" class="scroll-link">Про нас</a>
+							<a href="#strategy" data-offset="-100" class="scroll-link">Напрямки</a>
+						</li>
+						<li>
+							<a href="#work" data-offset="-100" class="scroll-link">Роботи</a>
 						</li>
 					</ul>
 				</nav>
@@ -62,11 +65,11 @@
 						<hr class="border-white mt-0 opacity-02">
 						<h3 class="widget-title color-grey">Є питання?</h3>
 						<p>Якщо виникли додаткові питання - зателефонуйте нам</p>
-						<p class="lead weight-bold color-grey">+380760987765</p>
+						<p class="lead weight-bold color-grey">(032) 244 19 55</p>
 					</div>
 				</div>
 				<div class="side-navigation-footer">
-					<p class="copyright no-margin-bottom">&copy; 2022 ЛЬВІВЕЛЕКТРОСЕРВІС.</p>
+					<p class="copyright no-margin-bottom">&copy; Корпорація ЛЬВІВЕЛЕКТРОСЕРВІС.</p>
 				</div>
 			</div>
 		</div>
@@ -83,8 +86,8 @@
 						<div class="column nav-bar-inner">
 							<div class="logo">
 								<div class="logo-inner">
-									<a href="index.html"><img src="images/logo-dark.png" alt="Warhol Logo" /></a>
-									<a href="index.html"><img src="images/logo.png" alt="Warhol Logo" /></a>
+									<a href="index.html"></a>
+									<a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
 								</div>
 							</div>
 							<nav class="navigation nav-block secondary-navigation nav-right no-margins">
@@ -92,7 +95,7 @@
 									<li>
 										<!-- Button -->
 										<div class="v-align-middle">
-											<a href="#contact" class="scroll-link button rounded no-label-on-mobile small pull-right no-margin-bottom"><span class="icon-chat left"></span> <span>Contact Us</span></a>
+											<a href="#contact" class="scroll-link button rounded no-label-on-mobile small pull-right no-margin-bottom"><span class="icon-chat left"></span> <span>Зв'язатися</span></a>
 										</div>
 									</li>
 									<li class="aux-navigation hide">
@@ -106,13 +109,16 @@
 							<nav class="navigation nav-block primary-navigation nav-center">
 								<ul>
 									<li class="current">
-										<a href="#home" data-offset="-60" class="scroll-link">Головна</a>
+										<a href="#home" data-offset="-100" class="scroll-link">Головна</a>
 									</li>
 									<li>
-										<a href="#services" data-offset="-60" class="scroll-link">Сервіси</a>
+										<a href="#services" data-offset="-100" class="scroll-link">Про нас</a>
 									</li>
 									<li>
-										<a href="#about" data-offset="-60" class="scroll-link">Про нас</a>
+										<a href="#strategy" data-offset="-100" class="scroll-link">Напрямки</a>
+									</li>
+									<li>
+										<a href="#work" data-offset="-100" class="scroll-link">Наші роботи</a>
 									</li>
 								</ul>
 							</nav>
@@ -212,7 +218,7 @@
 							</div>
 						</div>
 					</div>
-
+				</section>
 				<!-- Hero Section 5 -->
 				<section id="strategy" class="section-block hero-5 window-height right show-media-column-on-mobile bkg-grey-ultralight">
 					<div class="media-column width-5 background-none">
@@ -417,36 +423,12 @@
 											</div>
 											<div class="column width-6">
 												<div class="field-wrapper">
-													<input type="email" name="email" class="form-email form-element rounded large" placeholder="Ваш імейл" tabindex="3" required>
+													<input type="email" name="email" class="form-email form-element rounded large" placeholder="Ваш email" tabindex="3" required>
 												</div>
 											</div>
 											<div class="column width-6">
 												<div class="field-wrapper">
-													<input type="text" name="website" class="form-wesite form-element rounded large" placeholder="Website" tabindex="4">
-												</div>
-											</div>
-											<div class="column width-6">
-												<div class="field-wrapper">
-													<input type="text" name="date" class="form-aux form-date form-element rounded large" placeholder="Day/Month/Year" tabindex="5">
-												</div>
-											</div>
-											<div class="column width-6">
-												<div class="form-select form-element rounded large">
-													<select name="budget" tabindex="6" class="form-aux" data-label="Project Budget">
-														<option selected="selected" value="Project Budget">Project Budget</option>
-														<option value="">$500-$1000</option>
-														<option value="">$1000-$2000</option>
-														<option value="">$2000-$3500</option>
-														<option value="">$5000+</option>
-													</select>
-												</div>
-											</div>
-											<div class="column width-12">
-												<div class="field-wrapper pt-10 pb-10">
-													<input id="radio-1" class="form-element radio" name="radio-group" type="radio" checked>
-													<label for="radio-1" class="radio-label">Interested in consultation</label>
-													<input id="radio-2" class="form-element radio" name="radio-group" type="radio">
-													<label for="radio-2" class="radio-label">Interested in market study</label>
+													<input type="text" name="website" class="form-wesite form-element rounded large" placeholder="Номер телефону" tabindex="4">
 												</div>
 											</div>
 											<div class="column width-6">
@@ -456,17 +438,11 @@
 										<div class="row">
 											<div class="column width-12">
 												<div class="field-wrapper">
-													<textarea name="message" class="form-message form-element rounded large" placeholder="Message*" tabindex="7" required></textarea>
+													<textarea name="message" class="form-message form-element rounded large" placeholder="Ваше повідомлення*" tabindex="7" required></textarea>
 												</div>
 											</div>
 											<div class="column width-12">
-												<div class="field-wrapper pt-10 pb-10">
-												 	<input id="checkbox-1" class="form-element checkbox rounded" name="checkbox-1" type="checkbox" required>
-													<label for="checkbox-1" class="checkbox-label">I want to receive the Kant Newsletter</label>
-												</div>
-											</div>
-											<div class="column width-12">
-												<input type="submit" value="Send Email" class="form-submit button rounded medium bkg-theme bkg-hover-green color-white color-hover-white">
+												<input type="submit" value="Надіслати" class="form-submit button rounded medium bkg-theme bkg-hover-green color-white color-hover-white">
 											</div>
 										</div>
 									</form>
@@ -484,8 +460,7 @@
 					<div class="row collapse full-width">
 						<div class="column width-12 center">
 							<div class="map-container">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.161493148275!2d23.989054415558435!3d49.820629879393415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae777e49ffc53%3A0x1cd6c723d2deb508!2z0LLRg9C7LiDQmtGD0LvRjNC_0LDRgNC60ZbQstGB0YzQutCwLCA5Mywg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTA0MQ!5e0!3m2!1suk!2sua!4v1649007555259!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>							</div>
-						</div>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.1632754641673!2d23.989026015708614!3d49.82059637939342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae718202f8a01%3A0xada2892a40c3a55!2z0JrQntCg0J_QntCg0JDQptCG0K8g0JvQrNCS0IbQktCV0JvQldCa0KLQoNCe0KHQldCg0JLQhtCh!5e0!3m2!1suk!2sua!4v1649020367770!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>						</div>
 					</div>
 				</div>
 				<!-- Map Section End -->
@@ -498,42 +473,24 @@
 				<div class="footer-top">
 					<div class="row flex">
 						<div class="column width-4">
-							<div class="widget">
-								<h4 class="widget-title">Kant Marketing</h4>
-							</div>
 						</div>
-						<div class="column width-3 offset-2">
-							<div class="widget">
-								<h4 class="widget-title">More Links</h4>
-								<ul>
-									<li>
-										<a href="#">About the Firm</a>
-									</li>
-									<li>
-										<a href="#">Recent Work</a>
-									</li>
-									<li>
-										<a href="#">Firm Affiliations</a>
-									</li>
-									<li>
-										<a href="#">Awards</a>
-									</li>
-									<li>
-										<a href="#">Contact Us</a>
-									</li>
-								</ul>
-							</div>
+						<div class="column width-2 offset-2">
 						</div>
-						<div class="column width-3">
+						<div class="column width-4">
 							<div class="widget">
 								<h4 class="widget-title">Visit Us</h4>
 								<address>
-									126-130 Crosby Street, Soho<br>
-									New York City, NY 10012, U.S.
+									м. Львів<br>
+									вул. Кульпарківська, 93
 								</address>
 								<p>
-									Tel: + 44 543 22 343<br>
-									Email: <a href="mailto:#">info@kantagency.com</a>
+									(032) 244 19 55 – Приймальня<br>
+									(032) 244 19 97 – Проектний відділ<br>
+									(032) 244 19 98 – Бухгалтерія<br>
+									
+									+380972228059<br>
+									e-mail: <a href="mailto:#">lvivelektroservis@gmail.com</a><br>
+
 								</p>
 							</div>
 						</div>
@@ -543,7 +500,7 @@
 					<div class="row">
 						<div class="column width-12">
 							<div class="footer-bottom-inner">
-								<p class="copyright pull-left clear-float-on-mobile">&copy; ThemeMountain. All Rights Reserved. <a href="#" class="scroll-to-top" data-no-hide>Back Top</a></p>
+								<p class="copyright pull-left clear-float-on-mobile">&copy; Корпорація ЛЬВІВЕЛЕКТРОСЕРВІС <a href="#" class="scroll-to-top" data-no-hide></a></p>
 								<ul class="social-list list-horizontal pull-right clear-float-on-mobile left">
 									<li><a href="#"><span class="icon-twitter-with-circle medium"></span></a></li>
 									<li><a href="#"><span class="icon-facebook-with-circle medium"></span></a></li>
