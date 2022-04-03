@@ -20,7 +20,7 @@ class Mailchimp {
     
     public $apikey;
     public $ch;
-    public $root  = 'https://api.mailchimp.com/2.0';
+    public $root  = 'https://api.mailchimp.com/3.0';
     public $debug = true;
 
     public static $error_map = array(
