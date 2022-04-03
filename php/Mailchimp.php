@@ -20,8 +20,8 @@ class Mailchimp {
     
     public $apikey;
     public $ch;
-    public $root  = 'https://api.mailchimp.com/3.0';
-    public $debug = true;
+    public $root  = 'https://api.mailchimp.com/2.0';
+    public $debug = false;
 
     public static $error_map = array(
         "ValidationError" => "Mailchimp_ValidationError",
@@ -133,12 +133,12 @@ class Mailchimp {
         }
 
         $this->apikey = $apikey;
-        $dc           = "us14";
+        $dc           = "us1";
 
         if (strstr($this->apikey, "-")){
             list($key, $dc) = explode("-", $this->apikey, 2);
             if (!$dc) {
-                $dc = "us14";
+                $dc = "us1";
             }
         }
 
