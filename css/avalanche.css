@@ -334,6 +334,9 @@ Copyright: ThemeMountain
 	.tms-caption.hide-on-mobile{
 		display: none !important
 	}
+	.column.show-on-mobile {
+		display: block !important;
+	}
 }
 
 /*------------------------------------------------------------------
