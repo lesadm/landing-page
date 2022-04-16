@@ -242,7 +242,7 @@ Copyright: ThemeMountain
 }
 .tms-caption{
 	display: inline-block !important;
-	background-image: url(../images/blank.png);
+	/* background-image: url(../images/blank.png); */
 	opacity: 0;
 	position: absolute;
 	z-index: 2;
