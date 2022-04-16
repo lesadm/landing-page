@@ -167,7 +167,7 @@
 								>
 									<a href="#services" class="icon-circled icon-down-open-mini medium scroll-link bkg-white color-theme no-margins" data-offset="-60"></a>
 								</div>
-								<video autoplay muted loop width="100%" class="show-on-mobile">
+								<video autoplay muted loop width="100%" class="show-on-mobile" id="show-on-mobile">
 									<source src="video/bkg-small.mp4">
 								  </video>
 								<!-- <img data-src="images/slider/slide-14-fs.jpg" data-retina src="images/blank.png" alt=""/> -->
@@ -594,5 +594,10 @@
 	<!-- Js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/timber.master.min.js"></script>
+	<script>
+		var bgvideo = document.getElementsByClassName("show-on-mobile");
+		bgvideo.muted = true;
+		bgvideo.play();
+		</script>
 </body>
 </html>
