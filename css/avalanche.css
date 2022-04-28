@@ -336,6 +336,7 @@ Copyright: ThemeMountain
 	}
 	.column.show-on-mobile {
 		display: block !important;
+		height: 100%;
 	}
 }
 
