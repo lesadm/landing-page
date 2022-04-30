@@ -347,7 +347,7 @@ body.boxed .grid-container.small-margins.full-width > .row > .column{
 	padding-bottom: 0.5rem !important;
 }
 
-/* Fixed Dimension Grid 
+/* Fixed Dimension Grid
    Wrap any content grid in .masonry-set-demensions
    to set grid item with and height. Use .large and .portrait on
    .grid-item to specify grid item format.
@@ -660,7 +660,7 @@ body.boxed .grid-container.small-margins.full-width > .row > .column{
 }
 .header-transparent .header-inner{
 	background-color: transparent;
-	/* firefox fix for cases where header has a fixed 
+	/* firefox fix for cases where header has a fixed
 	position and translate is used to animate elements on page 
 	- fixes jaggy transitions in ff */
 	background-image: url(../images/blank.png);
@@ -731,14 +731,6 @@ body.boxed .header .header-inner{
 	line-height: 8rem;
 }
 
-/* Compacted Height */
-.header-compact .logo,
-.header-compact .header-inner .navigation > ul > li,
-.header-compact .header-inner .navigation > ul > li > a:not(.button),
-.header-compact .header-inner .dropdown > .nav-icon{
-	height: 6rem;
-	line-height: 6rem;
-}
 
 /* Logo */
 .header .logo,
@@ -752,9 +744,6 @@ body.boxed .header .header-inner{
 	vertical-align: middle;
 	position: relative;
 }
-.header .logo-inner{
-	overflow: hidden;
-}
 
 /* Logo Initial Width */
 .header .logo{
@@ -762,15 +751,6 @@ body.boxed .header .header-inner{
 }
 .header .logo span{
 	font-size: 2rem;
-	line-height: 2;
-}
-
-/* Compacted Header Logo Width */
-.header-compact .logo{
-	width: 10rem;
-}
-.header-compact .logo span{
-	font-size: 1.5rem;
 	line-height: 2;
 }
 
@@ -794,7 +774,7 @@ body.boxed .header .header-inner{
 
 /* Logo Swap - when header background changes*/
 .header .logo a:first-child{
-	display: none;
+	display: block !important;
 }
 .header .logo a:last-child{
 	display: table-cell;
@@ -804,7 +784,7 @@ body.boxed .header .header-inner{
 	display: table-cell;
 }
 .header-background .logo a + a{
-	display: none !important;
+	display: block !important;
 }
 
 /* Navigation */
@@ -987,7 +967,7 @@ body.boxed .header .header-inner{
 	vertical-align: middle;
 }
 .mobile .header .logo a + a{
-	display: none !important;
+	display: block !important;
 }
 .mobile .header .navigation-show{
 	display: block !important;
@@ -1063,10 +1043,20 @@ body.boxed .header .header-inner{
 }
 
 /* Header Media Queries */
+@media screen and (max-width : 1920px){
+    .logo-mobile {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1140px){
 	body.boxed .header-fixed-on-mobile .header-inner{
 		max-width: 96rem;
 	}
+
+	.logo-mobile {
+        display: block;
+     }
 }
 @media only screen and (max-width: 960px){
 	.header{
@@ -1112,7 +1102,7 @@ body.boxed .header .header-inner{
 		position: relative;
 	}
 	.header .logo a + a{
-		display: none !important;
+		display: block !important;
 	}
 	.header .header-inner,
 	.header .logo,
@@ -2082,7 +2072,7 @@ only screen and (				min-resolution: 2dppx) {
 	display: none;
 }
 
-/* Contact Forms 
+/* Contact Forms
 *  Add contact-form-container to any section
 *  or add a full prestyled section
 */
@@ -2134,7 +2124,7 @@ only screen and (				min-resolution: 2dppx) {
 	bottom: -3rem;
 }
 
-/* Singup Forms 
+/* Singup Forms
 *  Add signup-form-container to any section
 *  or add a full prestyled section
 */
@@ -2235,7 +2225,7 @@ only screen and (				min-resolution: 2dppx) {
 	bottom: -1.3rem;
 }
 
-/* Search Forms 
+/* Search Forms
 *  Add search-form-container to any section
 *  or add a full prestyled section
 */
@@ -4705,7 +4695,7 @@ body.boxed .footer .footer-bottom{
 	margin: 1.6rem 1.4rem;
 }
 
-/* Masonry Layout 
+/* Masonry Layout
    For fixed size grid items use 
    .blog-masonry.masonry-set-dimensions
 */
