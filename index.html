@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="css/templates.css">
 	<link rel="stylesheet" href="css/skin.css">
 	<link rel="stylesheet" href="css/landing.css">
+	<link rel="stylesheet" href="css/email.css">
 
 
 	<!--[if lt IE 9]>
@@ -490,26 +491,26 @@
 							</div>
 							<div class="column width-8 left">
 								<div class="contact-form-container">
-									<form class="contact-form" action="php/send-email.php" method="post" novalidate>
+
 										<div class="row">
 											<div class="column width-6">
 												<div class="field-wrapper">
-													<input type="text" name="fname" class="form-fname form-element rounded large" placeholder="Ім'я" tabindex="1" required>
+													<input type="text" id="firstName" class="form-fname form-element rounded large" placeholder="Ім'я" tabindex="1" required>
 												</div>
 											</div>
 											<div class="column width-6">
 												<div class="field-wrapper">
-													<input type="text" name="lname" class="form-lname form-element rounded large" placeholder="Прізвище" tabindex="2">
+													<input type="text" id="lastName" class="form-lname form-element rounded large" placeholder="Прізвище" tabindex="2">
 												</div>
 											</div>
 											<div class="column width-6">
 												<div class="field-wrapper">
-													<input type="email" name="email" class="form-email form-element rounded large" placeholder="Ваш email" tabindex="3" required>
+													<input type="email" id="userEmail" class="form-email form-element rounded large" placeholder="Ваш email" tabindex="3" required>
 												</div>
 											</div>
 											<div class="column width-6">
 												<div class="field-wrapper">
-													<input type="text" name="website" class="form-wesite form-element rounded large" placeholder="Номер телефону" tabindex="4">
+													<input type="text" id="phoneNumber" class="form-wesite form-element rounded large" placeholder="Номер телефону" tabindex="4">
 												</div>
 											</div>
 											<div class="column width-6">
@@ -519,15 +520,16 @@
 										<div class="row">
 											<div class="column width-12">
 												<div class="field-wrapper">
-													<textarea name="message" class="form-message form-element rounded large" placeholder="Ваше повідомлення*" tabindex="7" required></textarea>
+													<textarea id="userMessage" class="form-message form-element rounded large" placeholder="Ваше повідомлення*" tabindex="7" required></textarea>
 												</div>
 											</div>
+
 											<div class="column width-12">
-												<input type="submit" value="Надіслати" class="form-submit button rounded medium bkg-theme bkg-hover-green color-white color-hover-white">
+												<button onclick="sendEmail()" class="form-submit button rounded medium bkg-theme bkg-hover-green color-white color-hover-white">Надіслати</button>
 											</div>
 										</div>
-									</form>
-									<div class="form-response"></div>
+
+									<div id="error_message"></div>
 								</div>
 							</div>
 						</div>
@@ -535,6 +537,8 @@
 					<!--Contact Form End -->
 
 				</section>
+
+				<div id="fade"></div>
 
 				<!-- Map Section -->
 				<div class="section-block no-padding">
@@ -609,10 +613,17 @@
 
 		</div>
 	</div>
-
+	</div>
 	<!-- Js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/timber.master.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+	   (function(){
+		  emailjs.init("8Y5m9h8Vwe_cHZUhc");
+	   })();
+	</script>
+	<script src="js/email.js"></script>
 	<script>
 		var bgvideo = document.getElementById("show-on-mobile");
 		bgvideo.muted = true;
